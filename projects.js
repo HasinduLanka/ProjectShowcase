@@ -1,8 +1,42 @@
+exports.members = [
+    {
+        name: 'Hasindu Lanka',
+        github: 'HasinduLanka'
+    },
+    {
+        name: 'Bitdevs',
+        github: 'bitdevlk'
+    },
+    {
+        name: 'Kesara',
+        github: 'kesaralive'
+    },
+    {
+        name: 'Bitzquad',
+        github: 'Bitzquad'
+    }
+]
+
 exports.projects = [
     {
-        author: 'Hasindu Lanka',
+        author: 'HasinduLanka',
         name: 'Tic Tac Toe',
-        description: 'A simple tic tac toe game with a computer opponent',
         repo: 'github.com/HasinduLanka/rbit-proj-tictactoe'
-    }
-];
+    },
+    {
+        author: 'HasinduLanka',
+        name: 'Spindly',
+        repo: 'github.com/spindlygo/spindly'
+    },
+    {
+        author: 'HasinduLanka',
+        name: 'Memorize',
+        repo: 'github.com/HasinduLanka/Memorize'
+    },
+    {
+        author: 'Bitzquad',
+        name: 'Bitzquad Web',
+        repo: 'github.com/bitzquad/bitzquad.com'
+    },
+]
+
