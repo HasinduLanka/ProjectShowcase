@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "showcase": "node index.js"
+    "showcase": "node index.js",
+    "dev": "NPMBUILD=FALSE node index.js"
   },
   "author": "",
   "license": "ISC",

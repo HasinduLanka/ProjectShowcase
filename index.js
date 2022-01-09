@@ -1,10 +1,12 @@
 let child_process = require('child_process')
 let projectjs = require('./projects.js')
 let fs = require('fs')
+let os = require('os')
 let ejs = require('ejs');
 let { getLinkPreview } = require("link-preview-js");
+const { env } = require('process');
 
-const NPMBuild = false
+const NPMBuild = (env["NPMBUILD"] != "FALSE")
 
 Main().then(() => { })
 
@@ -94,18 +96,18 @@ async function Main() {
 
             if (NPMBuild) {
 
-                await Exec(`cd "./repos/${proj.repo}/.." && git clone --depth 1 --single-branch https://${proj.repo}`)
+                await Exec(`cd "./repos/${proj.repo}/.." && git clone --depth 1 --single-branch https://github.com/${proj.repo}`)
 
                 let packages = JSON.parse(fs.readFileSync(`./repos/${proj.repo}/package.json`))
-                packages["homepage"] = `/${username}/${proj.name}/`
+                packages["homepage"] = `/${proj.repo}/`
                 fs.writeFileSync(`./repos/${proj.repo}/package.json`, JSON.stringify(packages, null, 2))
 
                 await Exec(`cd "./repos/${proj.repo}/" && npm install && npm run build`)
 
-                await Exec(`mv "./repos/${proj.repo}/build/" "./build/${username}/${proj.name}/"`)
+                await Exec(`mv "./repos/${proj.repo}/build/" "./build/${proj.repo}/"`)
             }
 
-            let linkPreview = await getLinkPreview("https://" + proj.repo)
+            let linkPreview = await getLinkPreview("https://github.com/" + proj.repo)
 
 
 

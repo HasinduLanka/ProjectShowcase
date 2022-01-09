@@ -4,8 +4,8 @@ exports.members = [
         github: 'HasinduLanka'
     },
     {
-        name: 'Bitdevs',
-        github: 'bitdevlk'
+        name: 'Harsha Abeyvickrama',
+        github: 'HarshaAbeyvickrama'
     },
     {
         name: 'Kesara',
@@ -21,22 +21,12 @@ exports.projects = [
     {
         author: 'HasinduLanka',
         name: 'Tic Tac Toe',
-        repo: 'github.com/HasinduLanka/rbit-proj-tictactoe'
+        repo: 'HasinduLanka/rbit-proj-tictactoe'
     },
     {
-        author: 'HasinduLanka',
-        name: 'Spindly',
-        repo: 'github.com/spindlygo/spindly'
-    },
-    {
-        author: 'HasinduLanka',
-        name: 'Memorize',
-        repo: 'github.com/HasinduLanka/Memorize'
-    },
-    {
-        author: 'Bitzquad',
-        name: 'Bitzquad Web',
-        repo: 'github.com/bitzquad/bitzquad.com'
+        author: 'HarshaAbeyvickrama',
+        name: 'Tic Tac Toe',
+        repo: 'HarshaAbeyvickrama/React_tic-tac-toe'
     },
 ]
 
