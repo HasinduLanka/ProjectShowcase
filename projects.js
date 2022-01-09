@@ -8,12 +8,8 @@ exports.members = [
         github: 'HarshaAbeyvickrama'
     },
     {
-        name: 'Kesara',
-        github: 'kesaralive'
-    },
-    {
-        name: 'Bitzquad',
-        github: 'Bitzquad'
+        name: "Chathurika Dhananjani",
+        github: "chathurikadhananjani"
     }
 ]
 
